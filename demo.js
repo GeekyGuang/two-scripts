@@ -12,14 +12,9 @@ var fs = require('fs')
     fs.mkdirSync('css') 
     fs.mkdirSync('js') 
    
-    fs.writeFileSync("./index.html", "<!DOCTYPE>\n")
-    fs.appendFileSync("./index.html", "<title>Hello</title>\n")
-    fs.appendFileSync("./index.html", "<h1>Hi</h1>\n")
-   
+    fs.writeFileSync("./index.html", "<!DOCTYPE>\n<title>Hello</title>\n<h1>Hi</h1>\n")  
     fs.writeFileSync("css/style.css", " h1{color: red;}\n")
-   
-    fs.writeFileSync("./js/main.js", 'var string = "Hello World"\n')
-    fs.appendFileSync("./js/main.js", "alert(string)\n")
+    fs.writeFileSync("./js/main.js", 'var string = "Hello World"\nalert(string)\n')
  }
 
 
